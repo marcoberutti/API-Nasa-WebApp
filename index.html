@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real NASA API</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="loading">
+        <p>loading images...</p>
+            <div></div>
+    </div>
+    <header>
+        <h1>Nasa API -- search images --->>></h1>
+        <div>
+            <input id="startDate" type="date" value="2017-06-01" required>
+            <button>Cerca immagini</button>
+        </div>
+    </header>
+    <h3 id="alert">insert a valid date</h3>
+    <main>
+        <section class="astronomyPicture">
+            <h2>Astronomy picture of the day</h2>
+            <article id="mainPicture">
+            </article>
+        </section>
+        <section>
+            <h2>Previous images</h2>
+            <div class="pictures-container"></div>
+        </section>
+        <!-- MODAL -->
+        <div class="picture-details-container"></div>
+        <!-- MARS DATA -->
+        <div id="marsToday"></div>
+        <div id="marsChart">
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+</body>
+</html>
